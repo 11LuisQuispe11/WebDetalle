@@ -33,7 +33,7 @@
         .flip-card {
             background-color: transparent;
             width: 90%;
-            max-width: 350px;
+            max-width: 950px;
             height: 250px;
             perspective: 1000px;
             margin: 10px;
@@ -132,15 +132,15 @@
 
     <script>
             function lanzarCorazones() {
-        for (let i = 0; i < 50; i++) {
+        for (let i = 0; i < 250; i++) {
             let elemento = document.createElement("div");
             elemento.classList.add(Math.random() > 0.5 ? "corazon" : "globo");
             elemento.innerHTML = Math.random() > 0.5 ? "❤️" : "🎈";
             
             elemento.style.left = Math.random() * 100 + "vw"; // Posición aleatoria horizontal
-            elemento.style.bottom = Math.random() * 30 + "vh"; // Empiezan desde más arriba
+            elemento.style.bottom = Math.random() * 50 + "vh"; // Empiezan desde más arriba
             elemento.style.fontSize = (Math.random() * 25 + 10) + "px";
-            elemento.style.animationDuration = (Math.random() * 3 + 2) + "s";
+            elemento.style.animationDuration = (Math.random() * 10 + 1) + "s";
             elemento.style.position = "absolute"; // Asegurar que sea flotante
 
             document.body.appendChild(elemento);
