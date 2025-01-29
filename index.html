@@ -10,9 +10,11 @@
             background: linear-gradient(to right, #ff758c, #ff7eb3);
             font-family: 'Arial', sans-serif;
             color: white;
-            overflow: hidden;
+            overflow-x: hidden; /* Evita scroll horizontal */
+            overflow-y: auto;   /* Permite scroll vertical */
             padding: 10px;
         }
+
         h1 {
             font-size: 8vw; /* Tamaño flexible según la pantalla */
             margin-top: 20px;
